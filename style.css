@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 10vh;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    margin: 5em auto;
+}
+
+.content{
+    height: 90%;
+    margin: 2em auto;
+    color: #fff;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "profile work play study" "profile exercise social selfcare";
+}
+
+.profile{
+    grid-area: profile;
+    border-radius: 15px;
+    background-color:  hsl(235, 46%, 20%);
+
+}
+.highlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+    height: 15vh;
+    opacity: 100%;
+    margin: 1rem;
+    padding: .5rem;
+}
+#active{
+    opacity: 50%;
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: 70%;
+    background-color:  hsl(246, 80%, 60%);
+    border-radius: 15px;
+}
+.profile-details img{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.profile-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 2em;
+}
+.profile-tags p{
+    opacity: 50%;
+}
+.work{
+    grid-area: work;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    grid-area: play;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    grid-area: study;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(348, 100%, 68%); 
+}
+
+.bg-image{
+    display: flex;
+    justify-content: end;
+}
+
+.study-image{
+    width: 50px;
+    height: 50px;
+}
+.exercise{
+    grid-area: exercise;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(145, 58%, 55%);
+    
+}
+.social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(264, 64%, 52%);
+    
+}
+.selfcare{
+    grid-area: selfcare;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: hsl(43, 84%, 65%);
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color:  hsl(235, 46%, 20%);
+    height:80%; 
+    
+}
+.head-tag{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-right: 2em;
+    font-size: 18px;
+    
+}
+.selfcare .head-tag{
+    padding: 20px;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-left: 1rem;
+}
+.stats h2{
+   font-size: 3rem;
+}
+.stats p{
+    opacity: 50%;
+    padding-top: .5em;
+}
+
+@media  screen and (max-width: 768px) {
+    .container{
+        margin: 2em auto;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .highlights{
+        flex-direction: row;
+        align-items: flex-end;
+        height: 40px;
+        margin-bottom: 0;
+    }
+    .head-tag{
+        font-size: 25px;
+    }
+    
+    .details{
+        height: 80%;
+    }
+    .profile-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 60%;
+    }
+    .profile-tags{
+         margin-top: 0;
+    }
+    .profile-details img{
+        width: 20%;
+        display: block;
+        
+    }
+    
+    .stats{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+        width: 100%;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+    .stats h2{
+        font-size: 3rem;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    .content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .container{
+        margin: 2em auto;
+    }
+}
