@@ -11,8 +11,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 
+![assignment desktop](https://user-images.githubusercontent.com/65639270/195050264-bda6606e-9657-43d7-a58b-8045fb0fce1b.png)
+
+![assignment mobile](https://user-images.githubusercontent.com/65639270/195050331-c26b391a-088a-49ac-8328-3fa6a294b4f0.png)
 
 ## My process
 
@@ -39,4 +41,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-- Jonathan Ndambuki and Jonathan Mwaniki [@thejitu.com]
+- Jonathan Ndambuki and Jonathan Mwaniki (@thejitu.com)
